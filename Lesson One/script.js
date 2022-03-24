@@ -11,20 +11,20 @@ const updateTravelBag = (update) => { // creating an arrow function
 };
 
 const travelBag = {
-    name: "Travel Duffle Bag",
+    name: "The Batman",
     volume: 52,
-    color: "bourbon",
+    color: "Black and Yellow",
     dimensions: {
-        length: 22,
+        length: 21,
         height: 22,
         width: 12
     },
     box: {
-        name: "gift box",
-        color: "red",
-        shape: "square",
-        size: "small",
-        content: "watch"
+        name: "Joker",
+        color: "Riddler",
+        shape: "Poison Ivy",
+        size: "TwoFace",
+        content: "Bane"
     },
     zipperOpen: false,
     toggleZipper: function(zipperStatus) {
@@ -40,21 +40,30 @@ const travelBag = {
 const markup = (travelBag) => {
     return `
     <div>
-        <h3 style="color:red;">${travelBag.name}</h3>
+        <h3 style="color:black;">${travelBag.name}</h3>
         <ul>
-        <li>Volume:${travelBag.volume}</li>
-        <li style="color:red;">Color:${travelBag.color}</li>
-        <li>Length:${travelBag.dimensions.length} inches</li>
-        <li>Height:${travelBag.dimensions.height}</li>
-        <li>Width:${travelBag.dimensions.width}</li>
-        <li>Bag contents:${travelBag.box.name}</li>
-        <li>Box color:${travelBag.box.color}</li>
-        <li>Box shape:${travelBag.box.shape}</li>
-        <li>Box size:${travelBag.box.size}</li>
-        <li>Box contents:${travelBag.box.content}</li>
-        <li>Zipper:${travelBag.zipperOpen ? "Open" : "Closed"}</li>
+        <li style="color:red;">Robin:${travelBag.color}</li>
+        <li>Catwoman:${travelBag.dimensions.height}</li>
+        <li style="color:orange;">Alfred:${travelBag.dimensions.width}</li>
+        <li style="color:purple;">Comedy:${travelBag.box.name}</li>
+        <li style="color:green;">Pop Quiz:${travelBag.box.color}</li>
+        <li style="color:pink;">Pretty Flowers:${travelBag.box.shape}</li>
+        <li style="color:red;">Two Sides:${travelBag.box.size}</li>
+        <li style="color:blue;">Monster:${travelBag.box.content}</li>
         </ul>
-        <img src="images/TokyoSkytree.jpg" />
+        <img src="images/WayneManor.jpg" />
+        <html>
+        <body>
+        
+        <video width="320" height="240" autoplay>
+          <source src="Bats.mp4" type="Bats/mp4">
+          <source src="Bats.ogg" type="Bats/ogg">
+          Your browser does not support the video tag.
+        </video>
+        
+        </body>
+        </html>
+
     </div>    `
 }
 
